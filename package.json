@@ -1,0 +1,43 @@
+{
+  "name": "webpackexample",
+  "version": "1.0.0",
+  "description": "Simple webpack - react - asp.net core example project",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js --ext .jsx --cache",
+    "start": "node webpack-dev-server.js",
+    "build": "webpack --config ./webpack.config.prod.js --progress --optimize-minimize --optimize-occurrence-order && dotnet publish -c Release -o ./build"
+  },
+  "author": "Fran Olmedo",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.11.1",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.1.1",
+    "eslint-plugin-smells": "^1.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.18.0",
+    "isomorphic-style-loader": "^1.0.0",
+    "node-sass": "^3.7.0",
+    "postcss-loader": "^0.9.1",
+    "react-transform-hmr": "^1.0.4",
+    "sass-lint": "^1.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1"
+  }
+}
